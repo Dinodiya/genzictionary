@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          GenBictionary
+          GenZictionary
         </p>
         <button onClick={loadData}>Press me to load data</button>
         <br />
