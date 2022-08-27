@@ -19,26 +19,26 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          GenZictionary
+          GenBictionary
         </p>
         <button onClick={loadData}>Press me to load data</button>
-        <br/>
+        <br />
         {
           loading ? (<div>loading...</div>) :
-          (<div>
-            {
-              data.map(item => {
-                return (
-                  <>
-                    <b className="lavender-header">{item.word}</b>
-                    <div>{item.definition}</div>
-                    <br/>
-                  </>
-                )
-              })
-            }
-          </div>
-          )
+            (<div>
+              {
+                data.map(item => {
+                  return (
+                    <>
+                      <b className="lavender-header">{item.word}</b>
+                      <div>{item.definition}</div>
+                      <br />
+                    </>
+                  )
+                })
+              }
+            </div>
+            )
         }
       </header>
     </div>
